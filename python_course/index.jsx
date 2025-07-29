@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+/* import React, { useState, useEffect } from 'react';
 
 // Main App Component
 const App = () => {
@@ -408,7 +408,7 @@ const Chapter1 = () => {
           This command establishes a directory (e.g., <code>my_project_env</code>) containing a copy or symlink of the Python executable and a <code>site-packages</code> subdirectory for project-specific libraries.
         </p>
         <div className="flex justify-center my-4">
-          {/* Replaced base64 image with a placeholder */}
+          {/* Replaced base64 image with a placeholder */ /*}
           <img
             src="https://placehold.co/600x300/cccccc/000000?text=Venv+Creation+Example"
             alt="Venv Creation Example"
@@ -424,7 +424,7 @@ const Chapter1 = () => {
           This modifies the system's PATH variable to prioritize the environment's Python interpreter.
         </p>
         <div className="flex justify-center my-4">
-          {/* Replaced base64 image with a placeholder */}
+          {/* Replaced base64 image with a placeholder */ /*}
           <img
             src="https://placehold.co/600x300/cccccc/000000?text=Venv+Activation+Example"
             alt="Venv Activation Example"
@@ -439,7 +439,7 @@ const Chapter1 = () => {
           <strong>Deactivation:</strong> To exit the virtual environment and return to the global Python installation, the <code>deactivate</code> command is used.
         </p>
         <div className="flex justify-center my-4">
-          {/* Replaced base64 image with a placeholder */}
+          {/* Replaced base64 image with a placeholder */ /*}
           <img
             src="https://placehold.co/600x300/cccccc/000000?text=Venv+Deactivation+Example"
             alt="Venv Deactivation Example"
@@ -589,7 +589,7 @@ name = "Hafsa" # this is an inline comment</code></pre>
         <pre className="bg-gray-800 text-white p-3 rounded-md text-sm overflow-x-auto mt-2"><code>True
 False</code></pre>
         <div className="flex justify-center my-4">
-          {/* Replaced base64 image with a placeholder */}
+          {/* Replaced base64 image with a placeholder */ /*}
           <img
             src="https://placehold.co/600x300/cccccc/000000?text=Python+Type+Examples"
             alt="Python Type Examples"
@@ -1051,4 +1051,3 @@ Class = 3 # correct</code></pre>
 };
 
 export default App;
-

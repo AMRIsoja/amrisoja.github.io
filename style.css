@@ -1,0 +1,90 @@
+/* Custom CSS for additional styling and animations */
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.animate-fade-in-down {
+    animation: fadeInDown 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 1s ease-out forwards;
+    animation-delay: 0.3s; /* Delay for a staggered effect */
+}
+
+/* Ensure smooth scrolling for anchor links */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Base styles for images to be fluid */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+}
+
+/* Responsive adjustments for overall layout if needed */
+/* Though Tailwind handles most of this, this is for any custom overrides */
+.container {
+    max-width: 1200px; /* Max width for content to prevent it from being too wide on large screens */
+}
+
+/* For better readability of prose text within sections */
+.prose {
+    /* Base font size and line height for general text */
+    font-size: 1rem; /* 16px */
+    line-height: 1.75;
+}
+
+@media (min-width: 1024px) { /* Adjustments for larger screens (lg breakpoint in Tailwind) */
+    .lg\:prose-xl {
+        font-size: 1.125rem; /* 18px */
+        line-height: 1.8;
+    }
+}
+
+/* Hero section specific height for better visual presentation */
+#home {
+    min-height: 60vh; /* Minimum height for the hero section */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 5rem; /* Space for fixed header */
+}
+
+/* Ensure images within project cards maintain aspect ratio and fill space */
+.project-card img {
+    object-fit: cover; /* Cover the area, cropping if necessary */
+}
+
+/* Hide mobile menu by default */
+#mobile-menu {
+    transition: all 0.3s ease-in-out;
+}
+
+#mobile-menu.active {
+    display: block;
+}
